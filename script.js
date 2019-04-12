@@ -29,7 +29,7 @@ function predict(contex, positionx, positiony) {
 
     positionx = x1;
     positiony = y1;
- }, {probabilityThreshold: 0.99});
+ }, {probabilityThreshold: 0.999999});
 }
 
 async function run() {

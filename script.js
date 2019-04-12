@@ -18,7 +18,7 @@ function predict(contex, positionx, positiony) {
    scores = Array.from(scores).map((s, i) => ({score: s, word: words[i]}));
    scores.sort((s1, s2) => s2.score - s1.score);
 
-    console.log(scores);
+    console.log(scores[0].word, scores[0].score, scores[1].word, scores[1].score  );
     var direction = scores[0].word;
     var [x1, y1] = calculateNewPosition(positionx, positiony, direction);
 
